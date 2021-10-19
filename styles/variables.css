@@ -1,0 +1,11 @@
+/* this css file will be containing all the varaibles
+    that we'll be using in this project. so we can avoid 
+    repition of styles
+*/
+
+:root {
+  --primary: #4285f4;
+  --danger: #ea4335;
+  --warning: #fbbc04;
+  --success: #34a853;
+}
