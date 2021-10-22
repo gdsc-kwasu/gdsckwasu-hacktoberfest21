@@ -73,7 +73,7 @@ npm run lint
 
 ## Organizers
 
-This project was organized by [Kwara State Google Developer Student Club](https://gdsc.community.dev/kwara-state-university/) and it is powered by these awesome contributors :stars:
+This project was organized by [Kwara State Google Developer Student Club](https://gdsc.community.dev/kwara-state-university/) and it is powered by these awesome contributors :stars: <br>
 <a href="https://github.com/kwasu-ng/gdsckwasu-hacktoberfest21/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=kwasu-ng/gdsckwasu-hacktoberfest21" />
 </a>
