@@ -8,7 +8,7 @@ Welcome to <a href="https://gdsc.community.dev/kwara-state-university/">GDSC KWA
 
 <p align="center">
 <br>
-<a href="#about">About</a> | <a href="#getting-started">Getting Started</a> | <a href="#about">Contributing</a> | <a href="#organizers"> Organizers</a> | <a href="#license">License</a>
+<a href="#about">About</a> | <a href="#getting-started">Getting Started</a> | <a href="#contributing">Contributing</a> | <a href="#organizers"> Organizers</a> | <a href="#license">License</a>
 </p>
 
 ## About
