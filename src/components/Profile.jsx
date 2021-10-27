@@ -32,8 +32,8 @@ export default function Profile({
 Profile.defaultProps = {
   name: 'John Doe',
   gender: 'ambiguous',
-  skills: 'unspecified',
-  interest: 'unspecified',
-  biography: 'not specified',
+  skills: 'Skills: unspecified',
+  interest: 'Interest: unspecified',
+  biography: 'Biography: not specified',
   socialLinks: [],
 }
