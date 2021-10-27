@@ -15,7 +15,7 @@ const NavButtonsContainer = styled.div`
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    color: ${({ theme }) => theme.colors.profileColor};
+    color: 'black';
     display: flex;
     justify-content: center;
     align-items: center;

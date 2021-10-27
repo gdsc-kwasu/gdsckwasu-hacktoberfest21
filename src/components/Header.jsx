@@ -15,6 +15,7 @@ const HeaderContainer = styled.header`
   h1 {
     color: ${({ theme }) => theme.colors.headerColor};
     text-shadow: 0px 0px 20px ${({ theme }) => theme.colors.headerShadowColor};
+    transition: all 0.25s ease-in-out;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.large}) {

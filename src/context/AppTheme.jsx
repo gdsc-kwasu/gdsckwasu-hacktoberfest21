@@ -45,8 +45,8 @@ export function AppThemeProvider({ children }) {
         .alpha(0.76)
         .toString()}, ${
         color(themeColor).isLight()
-          ? color(themeColor).darken(0.35).alpha(0.76).toString()
-          : color(themeColor).lighten(0.35).alpha(0.76).toString()
+          ? color(themeColor).darken(0.25).alpha(0.76).toString()
+          : color(themeColor).lighten(0.25).alpha(0.76).toString()
       })`,
     },
   }
@@ -59,3 +59,5 @@ export function AppThemeProvider({ children }) {
     </AppThemeContext.Provider>
   )
 }
+
+export { AppThemeContext }

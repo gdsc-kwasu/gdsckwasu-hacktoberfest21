@@ -29,11 +29,6 @@ const SocialLinksContainer = styled.div`
     align-items: center;
     justify-content: center;
   }
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
-    position: absolute;
-    bottom: -1rem;
-  }
 `
 
 function SocialIcon({ link }) {

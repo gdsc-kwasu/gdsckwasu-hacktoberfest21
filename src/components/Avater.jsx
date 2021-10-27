@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const AvaterContainer = styled.div`
   width: 10rem;
@@ -27,10 +28,14 @@ const AvaterContainer = styled.div`
   }
 `
 
-export default function Avater() {
+export default function Avater({ url }) {
   return (
     <AvaterContainer>
-      <Image src="/img/avatar.jpg" alt="Avater Image" layout="fill" />
+      <Image src={url} alt="Avater Image" layout="fill" />
     </AvaterContainer>
   )
+}
+
+Avater.propTypes = {
+  url: PropTypes.string.isRequired,
 }
