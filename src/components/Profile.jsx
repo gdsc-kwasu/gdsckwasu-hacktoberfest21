@@ -1,7 +1,7 @@
 import Avater from './Avater'
 import GenderIcon from './GenderIcon'
 import SocialLinks from './SocialLinks'
-import ProfileContainer from './styled/ProfileContainer'
+import ProfileContainer from './styled/ProfileContainer.styled'
 
 export default function Profile({
   name,
