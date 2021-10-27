@@ -14,7 +14,7 @@ const DefaultTheme = {
     headerColor: '#2b2b2b',
     headerShadowColor: '#818181',
     themeColor: '#fc7a6a',
-    profileAvaterBorder: 'black',
+    profileAvatarBorder: 'black',
     profileBg: '#fc7a6a',
     profileColor: 'black',
     profileColorAlt: 'white',
@@ -36,7 +36,7 @@ export function AppThemeProvider({ children }) {
       themeColor,
       headerColor: color(themeColor).isDark() ? '#e0e0e0' : '#484848',
       headerShadowColor: color(themeColor).isDark() ? '#616161' : '#a8a8a8',
-      profileAvaterBorder: color(themeColor).isDark()
+      profileAvatarBorder: color(themeColor).isDark()
         ? '#ffffff86'
         : '#00000086',
       profileColor: color(themeColor).isDark() ? '#eeeeee' : '#1a1a1a',

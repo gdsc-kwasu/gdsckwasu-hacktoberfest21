@@ -1,4 +1,4 @@
-import Avater from './Avater'
+import Avater from './Avatar'
 import GenderIcon from './GenderIcon'
 import SocialLinks from './SocialLinks'
 import ProfileContainer from './styled/ProfileContainer.styled'
@@ -26,7 +26,10 @@ export default function Profile({ details }) {
 
   return (
     <ProfileContainer>
-      <Avater url={avatar || avaterLink(gender, name, student_id)} />
+      <Avater
+        url={avatar || avaterLink(gender, name, student_id)}
+        alt={`${name} Avatar`}
+      />
       <div className="primary-detials-container">
         <h2>
           {name} <GenderIcon gender={gender} />

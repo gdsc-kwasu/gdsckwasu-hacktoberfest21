@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-const AvaterContainer = styled.div`
+const AvatarContainer = styled.div`
   width: 10rem;
   height: 10rem;
   object-fit: cover;
@@ -23,19 +23,20 @@ const AvaterContainer = styled.div`
     width: calc(100% + 1.2rem);
     height: calc(100% + 1.2rem);
     position: absolute;
-    border: 0.2rem solid ${({ theme }) => theme.colors.profileAvaterBorder};
+    border: 0.2rem solid ${({ theme }) => theme.colors.profileAvatarBorder};
     border-radius: 50%;
   }
 `
 
-export default function Avater({ url }) {
+export default function Avatar({ url, alt }) {
   return (
-    <AvaterContainer>
-      <Image src={url} alt="Avater Image" layout="fill" />
-    </AvaterContainer>
+    <AvatarContainer>
+      <Image src={url} alt={alt} layout="fill" />
+    </AvatarContainer>
   )
 }
 
-Avater.propTypes = {
+Avatar.propTypes = {
   url: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
 }
