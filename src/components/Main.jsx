@@ -1,17 +1,22 @@
 import styled from 'styled-components'
 import Profile from './Profile'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { students } from '../students'
 
 import 'swiper/css'
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useContext, useEffect, useRef, useState } from 'react'
 import NavButtons from './NavButtons'
-
-const MainContainer = styled.main``
+import { AppThemeContext } from '../context/AppTheme'
 
 export default function Main() {
-  const maxCount = 4 // just dummy for testing
+  const maxCount = students.length
+  const { setTheme } = useContext(AppThemeContext)
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0)
   const swiperRef = useRef(null)
+
+  useEffect(() => {
+    setTheme(students[currentSlideIndex].card_theme || '#ffffff')
+  }, [currentSlideIndex, setTheme])
 
   const handleNext = useCallback(() => {
     const swiper = swiperRef.current
@@ -28,16 +33,16 @@ export default function Main() {
   }, [])
 
   return (
-    <MainContainer>
+    <div>
       <Swiper
         onInit={(swiper) => {
           swiperRef.current = swiper
         }}
         onSlideChange={(swiper) => setCurrentSlideIndex(swiper.activeIndex)}
       >
-        {Array.from({ length: maxCount }).map((_, index) => (
+        {students.map((student, index) => (
           <SwiperSlide key={index}>
-            <Profile />
+            <Profile details={student} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -47,6 +52,6 @@ export default function Main() {
         onNext={handleNext}
         onPrev={handlePrev}
       />
-    </MainContainer>
+    </div>
   )
 }

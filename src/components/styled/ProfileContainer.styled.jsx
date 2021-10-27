@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 const ProfileContainer = styled.div`
   height: 100vh;
-  transition: height 0.25s ease-in-out;
-  padding: 6rem 0 0;
+  padding: 6rem 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,27 +44,20 @@ const ProfileContainer = styled.div`
     align-self: stretch;
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
-    &::before,
-    &::after {
-      height: 1px;
-      content: '';
-      background: ${({ theme }) => theme.colors.profileColor};
-      display: block;
-      width: min(600px, 100%);
-      left: calc((100% - min(600px, 100%)) / 2);
-      position: absolute;
-    }
-
-    &::before {
+    & hr:first-of-type {
+      width: min(400px, 100%);
       margin-bottom: 1rem;
     }
 
-    &::after {
-      width: min(500px, 100%);
-      left: calc((100% - min(500px, 100%)) / 2);
-      margin-top: 1rem;
-      bottom: 0;
+    & hr:last-of-type {
+      width: min(300px, 100%);
+      margin-bottom: 1rem;
     }
   }
 
