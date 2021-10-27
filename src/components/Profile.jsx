@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import Avater from './Avater'
 import GenderIcon from './GenderIcon'
 import SocialLinks from './SocialLinks'
