@@ -3,7 +3,7 @@ import GenderIcon from './GenderIcon'
 import SocialLinks from './SocialLinks'
 import ProfileContainer from './styled/ProfileContainer.styled'
 
-const avaterLink = (gender, name, id) => {
+const avatarLink = (gender, name, id) => {
   const avaterSpirte =
     gender === 'male' ? 'male' : gender === 'female' ? 'female' : 'human'
 
@@ -27,7 +27,7 @@ export default function Profile({ details }) {
   return (
     <ProfileContainer>
       <Avater
-        url={avatar || avaterLink(gender, name, student_id)}
+        url={avatar || avatarLink(gender, name, student_id)}
         alt={`${name} Avatar`}
       />
       <div className="primary-detials-container">
