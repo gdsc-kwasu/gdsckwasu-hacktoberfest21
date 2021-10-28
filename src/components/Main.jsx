@@ -4,19 +4,15 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { students } from '../students'
 
 import 'swiper/css'
-import { useCallback, useContext, useEffect, useRef, useState } from 'react'
+import { useCallback, useContext, useRef, useState } from 'react'
 import NavButtons from './NavButtons'
 import { AppThemeContext } from '../context/AppTheme'
+import Progressbar from './Progressbar'
 
 export default function Main() {
-  const maxCount = students.length
   const { setTheme } = useContext(AppThemeContext)
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0)
   const swiperRef = useRef(null)
-
-  useEffect(() => {
-    setTheme(students[currentSlideIndex].card_theme || '#ffffff')
-  }, [currentSlideIndex, setTheme])
 
   const handleNext = useCallback(() => {
     const swiper = swiperRef.current
@@ -33,12 +29,18 @@ export default function Main() {
   }, [])
 
   return (
-    <div>
+    <main>
       <Swiper
         onInit={(swiper) => {
           swiperRef.current = swiper
+          setTheme(students[swiper.activeIndex].card_theme || '#ffffff')
         }}
-        onSlideChange={(swiper) => setCurrentSlideIndex(swiper.activeIndex)}
+        onSlideChange={(swiper) => {
+          setCurrentSlideIndex(swiper.activeIndex)
+        }}
+        onTransitionEnd={(swiper) => {
+          setTheme(students[swiper.activeIndex].card_theme || '#ffffff')
+        }}
       >
         {students.map((student, index) => (
           <SwiperSlide key={index}>
@@ -47,11 +49,12 @@ export default function Main() {
         ))}
       </Swiper>
       <NavButtons
-        enableNext={currentSlideIndex < maxCount - 1}
+        enableNext={currentSlideIndex < students.length - 1}
         enablePrev={currentSlideIndex > 0}
         onNext={handleNext}
         onPrev={handlePrev}
       />
-    </div>
+      <Progressbar progress={currentSlideIndex + 1} total={students.length} />
+    </main>
   )
 }

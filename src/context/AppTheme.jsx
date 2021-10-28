@@ -12,6 +12,7 @@ const DefaultTheme = {
   colors: {
     headerBg: 'transparent',
     headerColor: '#2b2b2b',
+    progressbarColor: '#6a79fc',
     headerShadowColor: '#818181',
     themeColor: '#fc7a6a',
     profileAvatarBorder: 'black',
@@ -36,6 +37,7 @@ export function AppThemeProvider({ children }) {
       themeColor,
       headerColor: color(themeColor).isDark() ? '#e0e0e0' : '#484848',
       headerShadowColor: color(themeColor).isDark() ? '#616161' : '#a8a8a8',
+      progressbarColor: color(themeColor).negate().toString(),
       profileAvatarBorder: color(themeColor).isDark()
         ? '#ffffff86'
         : '#00000086',

@@ -12,6 +12,7 @@ const ProfileContainer = styled.div`
   position: relative;
   background: ${({ theme }) => theme.colors.profileBg};
   color: ${({ theme }) => theme.colors.profileColor};
+  transition: all 0.25s ease-in-out;
 
   div.primary-detials-container {
     text-align: center;
@@ -35,7 +36,7 @@ const ProfileContainer = styled.div`
     padding-bottom: 3rem;
   }
 
-  p {
+  div.biography {
     padding: 0 2rem;
     overflow: hidden;
     min-height: 10rem;
