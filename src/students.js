@@ -32,7 +32,7 @@ export const students = [
   biography:
     'Backend Developer. Computer Science Undergraduate.',
   student_id: 3,
-  socialLinks: ['https://mobile.twitter.com/_Babayeju','https://www.linkedin.com/in/babayeju-fathi-adesina-b01b26213/'],
+  socialLinks: ['https://www.twitter.com/_Babayeju','https://www.linkedin.com/in/babayeju-fathi-adesina-b01b26213/'],
 },
 
   // studenst can now begin to add their own details.
