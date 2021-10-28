@@ -64,8 +64,10 @@ function SocialIcon({ link }) {
   } finally {
     if (icon) {
       return (
-        <Link href={link} passHref>
-          <div className="icon">{icon}</div>
+        <Link href={link} target="_blank"  passHref>
+          <a target="_blank">
+            <div className="icon">{icon}</div>
+          </a>
         </Link>
       )
     }
