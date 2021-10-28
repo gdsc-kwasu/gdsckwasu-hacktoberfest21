@@ -36,11 +36,11 @@ export default function Profile({ details }) {
         </h2>
         <strong className="skills">{skills}</strong>
       </div>
-      <p>
+      <div className="biography">
         <hr />
         {biography}
         <hr />
-      </p>
+      </div>
       <div className="secondary-details-container">
         <strong>Interest:</strong> {interest}
       </div>
