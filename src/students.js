@@ -23,6 +23,17 @@ export const students = [
     student_id: 2,
     socialLinks: ['https://linkedin.com/in/calebolojo'],
   },
+  {
+  name: 'Fathi Babayeju',
+  skills: 'CSS, JavaScript, Node',
+  gender: 'male',
+  interests: 'Coding, Reading',
+  card_theme: '#ff0000',
+  biography:
+    'Backend Developer. Computer Science Undergraduate.',
+  student_id: 3,
+  socialLinks: ['https://mobile.twitter.com/_Babayeju','https://www.linkedin.com/in/babayeju-fathi-adesina-b01b26213/'],
+},
 
   // studenst can now begin to add their own details.
   // We'll be mapping the items in this array into `pages/index.js`
