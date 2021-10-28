@@ -39,7 +39,7 @@ export const students = [
   skills: 'JavaScript,Node js,React,SQL,MongoDB',
   gender: 'male',
   interests: 'Swimming,Cricket',
-  card_theme: '#ff0000',
+  card_theme: '#66ff99',
   biography:
     'CSE undergraduate,Open-Source enthusiast',
   student_id: 4,
