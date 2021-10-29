@@ -1,30 +1,20 @@
 import { BsGenderMale, BsGenderFemale, BsGenderAmbiguous } from 'react-icons/bs'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import GenderIconContainer from './styled/GenderIconContainer.styled'
 
-const GenderIconContainer = styled.span`
-  font-size: 1.6rem;
-  display: flex;
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: ${({ theme }) => theme.colors.profileColorAlt};
-  color: ${({ theme }) => theme.colors.profileColor};
-`
-
+/**
+ * GenderComponent Component
+ * to return appropriate bootstrap gender icon component based on the gender string prop passed
+ */
 function GenderComponent({ gender }) {
   if (gender === 'male') {
     return <BsGenderMale />
-  }
-
-  if (gender === 'female') {
+  } else if (gender === 'female') {
     return <BsGenderFemale />
+  } else {
+    return <BsGenderAmbiguous />
   }
-
-  return <BsGenderAmbiguous />
 }
 
 export default function GenderIcon({ gender }) {

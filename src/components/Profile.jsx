@@ -2,32 +2,23 @@ import Avater from './Avatar'
 import GenderIcon from './GenderIcon'
 import SocialLinks from './SocialLinks'
 import ProfileContainer from './styled/ProfileContainer.styled'
+import PropTypes from 'prop-types'
+import { getAvatarLink } from '../utils'
 
-const avatarLink = (gender, name, id) => {
-  const avaterSpirte =
-    gender === 'male' ? 'male' : gender === 'female' ? 'female' : 'human'
-
-  return `https://avatars.dicebear.com/api/${avaterSpirte}/${encodeURIComponent(
-    `${name}.${id}`
-  )}.svg?background=%23ffffff&mood[]=happy`
-}
-
-export default function Profile({ details }) {
-  const {
-    name,
-    avatar,
-    student_id,
-    gender,
-    skills,
-    interest,
-    biography,
-    socialLinks,
-  } = details
-
+export default function Profile({
+  id,
+  name,
+  avatar,
+  gender,
+  skills,
+  interests,
+  biography,
+  socialLinks,
+}) {
   return (
     <ProfileContainer>
       <Avater
-        url={avatar || avatarLink(gender, name, student_id)}
+        url={avatar || getAvatarLink(`${name}.${id}`)}
         alt={`${name} Avatar`}
       />
       <div className="primary-detials-container">
@@ -42,20 +33,28 @@ export default function Profile({ details }) {
         <hr />
       </div>
       <div className="secondary-details-container">
-        <strong>Interest:</strong> {interest}
+        <strong>Interest:</strong> {interests}
       </div>
       <SocialLinks links={socialLinks} />
     </ProfileContainer>
   )
 }
 
+Profile.propTypes = {
+  name: PropTypes.string,
+  avatar: PropTypes.string,
+  gender: PropTypes.string,
+  skills: PropTypes.string,
+  interest: PropTypes.string,
+  biography: PropTypes.string,
+  socialLinks: PropTypes.arrayOf(PropTypes.string),
+}
+
 Profile.defaultProps = {
-  details: {
-    name: 'John Doe',
-    gender: 'ambiguous',
-    skills: 'Skills: unspecified',
-    interest: 'Interest: unspecified',
-    biography: 'Biography: not specified',
-    socialLinks: [],
-  },
+  name: 'John Doe',
+  gender: 'ambiguous',
+  skills: 'Skills: unspecified',
+  interest: 'Interest: unspecified',
+  biography: 'Biography: not specified',
+  socialLinks: [],
 }
