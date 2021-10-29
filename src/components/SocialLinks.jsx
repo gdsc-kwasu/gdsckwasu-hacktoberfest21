@@ -7,37 +7,25 @@ import {
   FaGithub,
   FaBehance,
 } from 'react-icons/fa'
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import SocialLinksContainer from './styled/SocialLinksContainer.styled'
 
-const SocialLinksContainer = styled.div`
-  padding: 0 5rem;
-  background: ${({ theme }) => theme.colors.themeColor};
-  font-size: 3rem;
-  display: flex;
-  height: 2rem;
-  gap: 1rem;
-  border-radius: 1000px;
-
-  div.icon {
-    margin: -1.5rem 0;
-    width: 5rem;
-    height: 5rem;
-    background: ${({ theme }) => theme.colors.themeColor};
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-`
-
+/**
+ * SocialIcon Component
+ * the purpose of this component is to return appropriate social icon based on the link provided
+ * it will return null if link is invalid or not supported
+ */
 function SocialIcon({ link }) {
   let icon
+
+  // reason for wrapping in try-catch block is because an Exception will be thrown
+  // when an invalid url (i.e missing http protocol) is passed to the URL class constructor
+  // not sure if this should be kept or we should always assume students will provide a valid link in their details
   try {
     const url = new URL(link)
     switch (url.host) {
       case 'facebook.com':
-      case 'www.facebook.com':
+      case 'www.facebook.com': // www.website.domain and website.domain are different cases
         icon = <FaFacebook />
         break
       case 'www.twitter.com':
@@ -65,8 +53,8 @@ function SocialIcon({ link }) {
     if (icon) {
       return (
         <Link href={link} passHref>
-          <a target="_blank"> 
-             <div className="icon">{icon}</div>
+          <a target="_blank">
+            <i className="icon">{icon}</i>
           </a>
         </Link>
       )
@@ -76,12 +64,8 @@ function SocialIcon({ link }) {
 }
 
 export default function SocialLinks({ links }) {
-  if (links.length === 0) {
-    return null
-  }
-
   return (
-    <SocialLinksContainer>
+    <SocialLinksContainer visible={links.length > 0}>
       {links.map((link, index) => (
         <SocialIcon link={link} key={index} />
       ))}
