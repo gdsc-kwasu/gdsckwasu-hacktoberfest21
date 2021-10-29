@@ -48,6 +48,20 @@ export const students = [
     biography: 'CSE undergraduate,Open-Source enthusiast',
     socialLinks: ['https://github.com/shahidcode'],
   },
+  {
+    id: 5,
+    name: 'Abdulbassit Abdullahi Funsho (funabab)',
+    skills: 'Software Development, Problem solving, Googling',
+    gender: 'male',
+    interests: 'Relaxing, Helping others and Researching',
+    theme: '#000000',
+    biography:
+      "I'm a CS student and software developer. I currently have a major focus on decentralized systems and anything web",
+    socialLinks: [
+      'https://www.linkedin.com/in/funabab',
+      'https://github.com/cskwasu2019',
+    ],
+  },
 
   // studenst can now begin to add their own details.
   // We'll be mapping the items in this array into `pages/index.js`
