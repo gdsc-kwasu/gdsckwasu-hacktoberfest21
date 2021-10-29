@@ -1,11 +1,11 @@
-import dynamic from 'next/dynamic'
-import React from 'react'
-import styled from 'styled-components'
-import Header from '../src/components/Header'
-import Main from '../src/components/Main'
-import { AppThemeProvider } from '../src/context/AppTheme'
+import dynamic from "next/dynamic";
+import React from "react";
+import styled from "styled-components";
+import Header from "../src/components/Header";
+import Main from "../src/components/Main";
+import { AppThemeProvider } from "../src/context/AppTheme";
 
-const ParticlesBg = dynamic(() => import('particles-bg'), { ssr: false })
+const ParticlesBg = dynamic(() => import("particles-bg"), { ssr: false });
 
 const Container = styled.div`
   max-width: 750px;
@@ -19,7 +19,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: stretch;
   }
-`
+`;
 
 export default function Home() {
   return (
@@ -30,5 +30,5 @@ export default function Home() {
         <Main />
       </Container>
     </AppThemeProvider>
-  )
+  );
 }
