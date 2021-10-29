@@ -1,9 +1,12 @@
 import HeaderContainer from "./styled/HeaderContainer.styled";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <HeaderContainer>
-      <a href="https://devllary.netlify.app/"> <h1>Devllary</h1></a>
+      <Link href="/" passHref>
+        <h1>Devllary</h1>
+      </Link>
     </HeaderContainer>
   );
 }
