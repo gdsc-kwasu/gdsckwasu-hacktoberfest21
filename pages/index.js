@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Header from '../src/components/Header'
 import Main from '../src/components/Main'
+import Head from 'next/head'
 import { AppThemeProvider } from '../src/context/AppTheme'
 
 const ParticlesBg = dynamic(() => import('particles-bg'), { ssr: false })
@@ -23,6 +24,11 @@ const Container = styled.div`
 
 export default function Home() {
   return (
+    <div>
+    <Head>
+    <title>Devllary</title>
+    </Head>
+    </div>
     <AppThemeProvider>
       <ParticlesBg bg={true} type="cobweb" color="#0f0f0f" num={50} />
       <Container>
