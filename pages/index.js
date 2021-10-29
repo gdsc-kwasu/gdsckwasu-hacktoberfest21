@@ -2,7 +2,9 @@ import dynamic from 'next/dynamic'
 import React from 'react'
 import styled from 'styled-components'
 import Header from '../src/components/Header'
+import Head from 'next/head'
 import Main from '../src/components/Main'
+
 import { AppThemeProvider } from '../src/context/AppTheme'
 
 const ParticlesBg = dynamic(() => import('particles-bg'), { ssr: false })
