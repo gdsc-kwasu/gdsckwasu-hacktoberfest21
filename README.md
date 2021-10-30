@@ -43,14 +43,14 @@ npm run dev
 
 ## Contributing
 
-Before contributing, make sure you are familiar with the [basics of contributing to a project](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project) and ensure you have succesfully setup the project by following instuctions in the getting started section.
+Before contributing, make sure you are familiar with the [basics of contributing to a project](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project) and ensure you have successfully setup the project by following instructions in the **Getting Started** section.
 
 To begin contributing, you can look through the [project issues](https://github.com/kwasu-ng/gdsckwasu-hacktoberfest21/issues) to find open issues of task that need to be implemented. If what you are intending to contribute isn't listed in the issues, you can open a new issue stating what you would like to contribute before sending a pull request.
 
-Contribtion can be made in any of the following ways.
+Contribution can be made in any of the following ways:
 
-**Contributing to the documention**
-If you find any typo or feel that documetation is lacking in any way, kindly send a PR. Basically any improvement to the project documentation is highly welcomed.
+**Contributing to the documentation**
+If you find any typo or feel that documentation is lacking in any way, kindly send a PR. Basically any improvement to the project documentation is highly welcomed.
 
 **Contributing by adding your profile to the project**
 You can also contribute by adding your profile details to the project. This can be done by adding your profile details object to the `students` array in _[src/students.js](https://github.com/kwasu-ng/gdsckwasu-hacktoberfest21/blob/master/src/students.js)_ and sending a PR.
