@@ -6,9 +6,14 @@
 Welcome to <a href="https://gdsc.community.dev/kwara-state-university/">GDSC KWASU</a> hacktoberfest2021 project repository.... Happy Hacking! :sunglasses:
 </div>
 
+## Project Name
+
+This project is named **DEVLLARY**
+
 <p align="center">
 <br>
-<a href="#about">About</a> | <a href="#getting-started">Getting Started</a> | <a href="#contributing">Contributing</a> | <a href="#organizers"> Organizers</a> | <a href="#license">License</a>
+<a href="#about">About</a> | <a href="#getting-started">Getting Started</a> | <a href="#contributing">Contributing</a> | <a href="#organizers"> Organizers</a> | <a href="#license">License</a> |
+<a href="https://devllary.netlify.app/">Live Demo :globe_with_meridians:</a>
 </p>
 
 ## About
@@ -78,10 +83,8 @@ This project was organized by [Kwara State Google Developer Student Club](https:
 <img src="https://contrib.rocks/image?repo=kwasu-ng/gdsckwasu-hacktoberfest21" />
 </a>
 
-##Project Live Link
-[https://devllary.netlify.app/]
-
 ##Project Live page
+
 <div align="center">
 Welcome to <a href="https://drive.google.com/file/d/1fBsYzSuPegdytQrNiEsp5Ka1AkU1YbCj/view?usp=sharing"></a>
 </div>
