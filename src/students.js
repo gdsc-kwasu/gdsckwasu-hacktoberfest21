@@ -62,7 +62,18 @@ export const students = [
       'https://github.com/cskwasu2019',
     ],
   },
+  {
+    id: 6,
+    name: 'Benjamin Babatola',
+    skills: 'Graphic Design, HTML, CSS',
+    gender: 'male',
+    interests: 'Design, Coding, Music',
+    theme: '#00628F',
+    biography:
+      'I am a student of Computer Science, 400 level, at Kwara State University, Malete. Passionate about values, creativity and development.',
+    socialLinks: ['www.linkedin.com/in/benjaminbabatola', 'https://github.com/benjaminob'],
+  },
 
-  // studenst can now begin to add their own details.
+  // students can now begin to add their own details.
   // We'll be mapping the items in this array into `pages/index.js`
 ]
