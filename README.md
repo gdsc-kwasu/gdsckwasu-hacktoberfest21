@@ -6,9 +6,14 @@
 Welcome to <a href="https://gdsc.community.dev/kwara-state-university/">GDSC KWASU</a> hacktoberfest2021 project repository.... Happy Hacking! :sunglasses:
 </div>
 
+## Project Name
+
+This project is named **DEVLLARY**
+
 <p align="center">
 <br>
-<a href="#about">About</a> | <a href="#getting-started">Getting Started</a> | <a href="#contributing">Contributing</a> | <a href="#organizers"> Organizers</a> | <a href="#license">License</a>
+<a href="#about">About</a> | <a href="#getting-started">Getting Started</a> | <a href="#contributing">Contributing</a> | <a href="#organizers"> Organizers</a> | <a href="#license">License</a> |
+<a href="https://devllary.netlify.app/">Live Demo :globe_with_meridians:</a>
 </p>
 
 ## About
@@ -43,14 +48,14 @@ npm run dev
 
 ## Contributing
 
-Before contributing, make sure you are familiar with the [basics of contributing to a project](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project) and ensure you have succesfully setup the project by following instuctions in the getting started section.
+Before contributing, make sure you are familiar with the [basics of contributing to a project](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project) and ensure you have successfully setup the project by following instructions in the **Getting Started** section.
 
 To begin contributing, you can look through the [project issues](https://github.com/kwasu-ng/gdsckwasu-hacktoberfest21/issues) to find open issues of task that need to be implemented. If what you are intending to contribute isn't listed in the issues, you can open a new issue stating what you would like to contribute before sending a pull request.
 
-Contribtion can be made in any of the following ways.
+Contribution can be made in any of the following ways:
 
-**Contributing to the documention**
-If you find any typo or feel that documetation is lacking in any way, kindly send a PR. Basically any improvement to the project documentation is highly welcomed.
+**Contributing to the documentation**
+If you find any typo or feel that documentation is lacking in any way, kindly send a PR. Basically any improvement to the project documentation is highly welcomed.
 
 **Contributing by adding your profile to the project**
 You can also contribute by adding your profile details to the project. This can be done by adding your profile details object to the `students` array in _[src/students.js](https://github.com/kwasu-ng/gdsckwasu-hacktoberfest21/blob/master/src/students.js)_ and sending a PR.
@@ -77,14 +82,6 @@ This project was organized by [Kwara State Google Developer Student Club](https:
 <a href="https://github.com/kwasu-ng/gdsckwasu-hacktoberfest21/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=kwasu-ng/gdsckwasu-hacktoberfest21" />
 </a>
-
-##Project Live Link
-[https://devllary.netlify.app/]
-
-##Project Live page
-<div align="center">
-Welcome to <a href="https://drive.google.com/file/d/1fBsYzSuPegdytQrNiEsp5Ka1AkU1YbCj/view?usp=sharing"></a>
-</div>
 
 ## License
 
