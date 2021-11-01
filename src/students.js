@@ -74,6 +74,17 @@ export const students = [
     socialLinks: ['www.linkedin.com/in/benjaminbabatola', 'https://github.com/benjaminob'],
   },
 
+  {
+    id: 7,
+    name: 'Abdul Azeez Faruq ',
+    skills: 'JavaScript,Tailwind ,React',
+    gender: 'male',
+    interests: 'coding, Working on technical projects',
+    theme: '#000',
+    biography: "I'm a self thought Website developer. Always ready to learn and solve problems",
+    socialLinks: ['https://github.com/umarfaruq43'],
+  }
+
   // students can now begin to add their own details.
   // We'll be mapping the items in this array into `pages/index.js`
 ]
