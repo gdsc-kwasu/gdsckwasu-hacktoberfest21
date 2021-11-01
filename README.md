@@ -83,6 +83,11 @@ This project was organized by [Kwara State Google Developer Student Club](https:
 <img src="https://contrib.rocks/image?repo=kwasu-ng/gdsckwasu-hacktoberfest21" />
 </a>
 
+##Live Link
+<a href="https://devllary.netlify.app/">
+<img src="https://drive.google.com/file/d/1aYP3epstaEbsnWrN5wJF3pbH4zcfNCBA/view?usp=sharing" />
+</a>
+
 ## License
 
 [MIT License](/LICENSE)
